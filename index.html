@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Vilma</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#footer" onclick="seleccionar()">REDES</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="container" id="animation-container">
+                <div class="photo-container">
+                    <img id="myPhoto" src="img/vilmu.jpg" alt="foto vilma" onload="animatePhoto()">
+
+                </div>
+                <div class="text-container">
+                    <h1>Vilma</h1>
+                    <h2>Ponce</h2>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola,soy Vilma Ponce.</span> Desarrolladora frontend apasionada y comprometida, con un enfoque
+                centrado en la mejora continua. Entusiasta en busca de oportunidades para aplicar y expandir mis
+                habilidades en proyectos desafiantes.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+
+                        <li>
+                            <strong>Teléfono</strong>
+                            1130062964
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            vilmuponce@gmail.com
+
+
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                            <span>NATURALEZA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>DIBUJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>INFORMATICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="cv/cvVilma.pdf" download>Descargar CV</a>
+
+                <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+
+            <h2>Skills</h2>
+
+            <div class="fila">
+
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="neon-skill">
+
+                        <span>Javascript</span><i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+                    </div>
+                    <div class="neon-skill">
+                        <span>HTML & CSS</span><i class="fa-brands fa-html5" style="color: #e92525;"></i>
+                        <i class="fa-brands fa-css3" style="color: #74C0FC;"></i>
+                    </div>
+                    <div class="neon-skill">
+                        <span>React.Js</span><i class="fa-brands fa-react" style="color: #74C0FC;"></i>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Git y GitHub</span><i class="fa-brands fa-git" style="color: #df8243;"></i>
+                        <i class="fa-brands fa-github" style="color: #d8dee9;"></i>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Bootstrap</span><i class="fa-brands fa-bootstrap" style="color: #B197FC;"></i>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Node.Js</span><i class="fa-brands fa-node" style="color: #087d5a;"></i>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="neon-skill">
+                        <span>Colaboración y Comunicación</span>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Trabajo en Equipo</span>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Creatividad</span>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Dedicación</span>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Aprendizaje Continuo</span>
+                    </div>
+                    <div class="neon-skill">
+                        <span>Resolución de Problemas</span>
+                    </div>
+                    <div class="neon-skill">
+                        <span> Gestión del Tiempo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Educacion -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bootcamp Javascript</h4>
+                        <span class="casa">Alkemy</span>
+                        <span class="fecha">2023</span>
+                        <p>Utilicé la biblioteca <b>React</b> para construir interfaces de usuario
+                            dinámicas y eficientes.<br>
+
+                            <b>Gestión de Estado:</b> Implementé soluciones efectivas para gestionar el estado de la
+                            aplicación
+                            utilizando React Hooks, garantizando un rendimiento óptimo y una gestión eficiente de los
+                            datos.<br>
+
+                            <b>Componentes Reutilizables:</b> Diseño y desarrollo componentes modulares y reutilizables
+                            que
+                            facilitan el mantenimiento y la escalabilidad de las aplicaciones.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>React.js</h4>
+                        <span class="casa">Alura Latam - Oracle</span>
+                        <span class="fecha">Mayo 2023-Diciembre 2023</span>
+                        <p><b>React JS:</b> Desarrollé aplicaciones utilizando componentes funcionales y aprovecho los
+                            React Hooks para gestionar el estado de manera eficiente.
+
+                            Utilicé Styled Components para crear estilos modularizados y
+                            reutilizables, proporcionando una experiencia de desarrollo más mantenible.
+
+                            Diseño y desarrollo de aplicaciones de una sola página (SPA) para una
+                            navegación fluida y rápida, mejorando la experiencia del usuario.
+
+                            Implemento diseño responsivo utilizando media queries, Flexbox y Grid
+                            Layout para garantizar una experiencia consistente en dispositivos de diferentes tamaños.
+
+                            He trabajado con Bootstrap para crear interfaces modernas y escalables,
+                            aprovechando sus componentes y estilos predefinidos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3><br></h3>
+                    <div class="item der">
+                        <h4>Programador Phyton</h4>
+                        <span class="casa">Universidad de Lanus</span>
+                        <span class="fecha">Agosto 2023-Octubre 2023</span>
+                        <p>Utilicé Python como lenguaje principal para la implementación de un programa de simulación de
+                            un comercio.<br>
+                            La aplicación incluye la gestión de productos, generación de tickets, control de stock,
+                            registro de ventas
+                            diarias y mensuales, así como análisis de datos para identificar las categorías más
+                            vendidas.
+                            Utilicé principios de programación
+                            orientada a objetos para mejorar la modularidad y la reutilización del código.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Software Tester QA Manual -</h4>
+                        <span class="casa">Educacion IT</span>
+                        <span class="fecha">2022</span>
+                        <p>Desarrollé habilidades sólidas en la planificación y ejecución de pruebas manuales.
+                            Identificación y documentación efectiva de errores, defectos y fallos.
+
+                            Aplicación de diversos tipos y niveles de pruebas para asegurar la robustez del software.
+                            Implementación de técnicas de diseño de pruebas para casos exhaustivos.
+                            Participación en proyectos integrales, resolviendo desafíos prácticos de forma eficiente.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Encriptador de Texto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Veterinaria</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>E-commerce Alura Geek</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Responsive web design</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Create React App</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formspree.io/f/mqkrqpol" method="POST">
+                        <label>
+                            Tu Nombre:
+                            <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                        </label>
+                        <label>
+                            Número telefónico:
+                            <input type="text" name="telefono" placeholder="Número telefónico">
+                        </label>
+                        <label>
+                            Dirección de correo:
+                            <input type="email" name="_replyto" placeholder="Dirección de correo" required>
+                        </label>
+                        <label>
+                            Tema:
+                            <input type="text" name="tema" placeholder="Tema">
+                        </label>
+                        <label>
+                            Mensaje:
+                            <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        </label>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+
+
+
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Llavallol,Buenos Aires
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                tel:11-30062964
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: vilmuponce@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/vilmaponce" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vilma-ponce-frontend" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
